@@ -1,0 +1,8 @@
+[user]
+	name = niyrme
+	email = niyrme@niyrme.xyz
+	signingkey = E0088D7D5A006A1C227E082505872FCED7181460
+[commit]
+	gpgsign = true
+[gpg]
+	program = gpg
