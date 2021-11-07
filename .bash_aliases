@@ -1,0 +1,6 @@
+alias ll='ls -l'
+alias lg='lazygit'
+alias gs='git status'
+alias pca='pre-commit run -a'
+alias py='/usr/local/bin/python3'
+alias pypip='/usr/local/bin/pip3'
