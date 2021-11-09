@@ -1,0 +1,83 @@
+config:
+  create: true
+  dotpath: "."
+  keepdot: true
+  link_dotfile_default: link
+
+# prefixes
+#   f: file
+#   d: directory
+dotfiles:
+  fProfile:
+    src: .profile
+    dst: ~/.profile
+
+  # bash
+  fBashAliases:
+    src: .bash_aliases
+    dst: ~/.bash_aliases
+  fBashLogout:
+    src: .bash_logout
+    dst: ~/.bash_logout
+  fBashrc:
+    src: .bashrc
+    dst: ~/.bashrc
+
+  # emacs
+  fEmacs:
+    src: .emacs
+    dst: ~/.emacs
+
+  # fish
+  dFish:
+    src: .config/fish
+    dst: ~/.config/fish
+
+  # git
+  fGitconfig:
+    src: .gitconfig
+    dst: ~/.gitconfig
+
+  # lazygit
+  dLazygitConfig:
+    src: .config/lazygit/config.yml
+    dst: ~/.config/lazygit/config.yml
+
+  # nano
+  fNanorc:
+    src: .nanorc
+    dst: ~/.nanorc
+  dNano:
+    src: .nano
+    dst: ~/.nano
+
+  # zsh
+  fZshrc:
+    src: .zshrc
+    dst: ~/.zshrc
+  dOhMyZshCustom:
+    src: .oh-my-zsh/custom
+    dst: ~/.oh-my-zsh/custom
+
+profiles:
+  PC:
+    dotfiles:
+      - fProfile
+      # bash
+      - fBashAliases
+      - fBashLogout
+      - fBashrc
+      # emacs
+      - fEmacs
+      # fish
+      - dFish
+      # git
+      - fGitconfig
+      # lazygit
+      - dLazygitConfig
+      # nano
+      - fNanorc
+      - dNano
+      # zsh
+      - fZshrc
+      - dOhMyZshCustom
