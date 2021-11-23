@@ -1,8 +1,14 @@
+# dotdrop config
 config:
+  backup: true
+  compare_workdir: true
+  check_version: true
   create: true
   dotpath: "."
   keepdot: true
   link_dotfile_default: link
+  longkey: true
+  showdiff: true
 
 # prefixes
 #   f: file
@@ -60,6 +66,7 @@ dotfiles:
     dst: ~/.oh-my-zsh/custom
 
 profiles:
+  # default profile
   PC:
     dotfiles:
       - fProfile
