@@ -2,6 +2,10 @@
 	name = niyrme
 	email = niyrme@niyrme.xyz
 	signingkey = E0088D7D5A006A1C227E082505872FCED7181460
+[alias]
+	pca = !pre-commit run -a
+[color]
+	ui = true
 [commit]
 	gpgsign = true
 [gpg]
