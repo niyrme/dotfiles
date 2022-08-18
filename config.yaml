@@ -57,6 +57,11 @@ dotfiles:
     src: .nano
     dst: ~/.nano
 
+  # starship
+  fStarshipTOML:
+    src: .config/starship.toml
+    dst: ~/.config/starship.toml
+
   # zsh
   fZshrc:
     src: .zshrc
@@ -85,6 +90,8 @@ profiles:
       # nano
       - fNanorc
       - dNano
+      # starship
+      - fStarshipTOML
       # zsh
       - fZshrc
       - dOhMyZshCustom
